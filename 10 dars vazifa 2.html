@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar {
+            height: 90vh;
+            width: 300px;
+            background-color: #313137;
+
+
+        }
+
+        .sidebar_top {
+            height: 80px;
+            width: 300px;
+            color: #C7C6CB;
+            display: flex;
+            align-items: center;
+            display: flex;
+
+
+        }
+
+        .sidebar_top>h1 {
+            font-size: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            margin-left: 15px;
+            flex: 1;
+
+        }
+
+        .sidebar_top>i {
+            margin-right: 15px;
+            font-size: 30px;
+            background-color: ;
+
+        }
+        .side{
+            display: flex;
+         width: 300px;
+         height: 60px;
+         background-color: #24232A;
+           
+        }
+
+        .sidebar_line {
+            width: 180px;
+            height: 40px;
+            color:#C7C6CB ;
+            font-family: sans-serif;
+            text-indent: 15px;
+
+        }
+        .sidebar_line>select{
+            width: 120px;
+            height: 25px;
+            font-weight: 500; 
+            background-color: transparent;
+            color: wheat;
+            border: none;
+
+        }
+        .sidebar_line>p{
+           color: rgba(124, 123, 123, 0.432);
+           font-size: 15px;
+           margin-top: 5px;
+           margin-left: 5px;
+        }
+
+        .a{
+            width: 120px;
+            height: 40px;
+            color: #98F1BB;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            margin-left: 90px;
+        }
+
+      
+
+        .sidebar_live {
+            width: 300px;
+            height: 50px;
+            background-color:#313137;
+            color: hsla(103, 89%, 41%, 0.98);
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            margin-left: 5px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            margin-top: 20px;
+        }
+
+        .sidebar_live>i {
+            font-size: 20px;
+            margin-left: 10px;
+
+        }
+
+        .sidebar_live>p {
+            flex: 1;
+            margin-left: 15px;
+        }
+
+        .sidebar_container {
+            width: 300px;
+            height: 250px;
+            background-color: #313137;
+            font-family: sans-serif;
+        }
+
+        .sidebar_container {
+            margin-top: 10px;
+        }
+
+        .item {
+            font-size: 30px;
+            display: flex;
+            margin-left: -26px;
+            line-height: ;
+            color: #C7C6CB;
+        }
+
+        .item>i {
+
+            line-height: 2;
+        }
+
+        .item>p {
+            margin-left: 30px;
+            font-size: 20px;
+            line-height: 3;
+            color: #C7C6CB;
+        }
+
+        .item:hover {
+            background-color: #24232A;
+            color: purple;
+        }
+
+
+        .list {
+            width: 280px;
+            height: 40px;
+            background-color:   #313137;
+            border: none;
+            color: #98F1BB;
+            text-indent: 15px;
+
+        }
+
+        .list:hover {
+            background-color: #24232A;
+            color: rgb(189, 5, 196);
+
+        }
+
+        .list>option {
+            color: #98F1BB;
+            background-color: #24232A;
+            font-size: 15px;
+
+
+        }
+
+        .line {
+            width: 280px;
+            height: 1px;
+            border: #24232A;
+            background-color: #24232A;
+            margin-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar_top">
+            <h1> Format</h1>
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="side">
+            <div class="sidebar_line">
+             <select name="" id="">
+                 <option value="">
+                     Miguel Mendes
+                 </option>
+             </select>
+            <p> Pro  Yearly </p>
+            </div>
+            <div class="a">
+                <i class="fas fa-cog"></i>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="sidebar_live"> <i class="far fa-eye"></i>
+            <p>View Live Site</p>
+
+        </div>
+        <div class="sidebar_container">
+            <ul>
+                <i class="item"> <i class="fas fa-qrcode"></i>
+                    <p>Dashboard</p>
+                </i>
+                <i class="item"><i class="fas fa-list-ul"></i>
+                    <p>Site Menu</p>
+                </i>
+                <i class="item"> <i class="fas fa-shapes"></i>
+                    <p>Disegn</p>
+                </i>
+                <i class="item"> <i class="fas fa-file-alt"></i>
+                    <p>Pages</p>
+                </i>
+            </ul>
+        </div>
+        <select class="list" name="" id="">
+            <option value="">MORE</option>
+            <option value=""> MIDDLE </option>
+            <option value=""> LESS</option>
+            <option value=""> A LOT </option>
+        </select>
+    </div>
+
+</body>
+
+</html>

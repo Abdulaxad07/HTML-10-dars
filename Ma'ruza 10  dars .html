@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar{
+            width: 300px;
+            height: 90vh;
+            background-color: #313137;
+        }
+
+        .sidebar_top{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            color: #C7C6CB;
+        }
+
+        .sidebar_top > h1{
+            flex: 1;
+            margin-left: 15px;
+            font-family: sans-serif;
+        }
+
+        .sidebar_top > i{
+            margin-right: 15px;
+            font-size: 30px;
+        }
+
+        .sidebar_live{
+            width: 100%;
+            height: 50px;
+            background-color: #24232A;
+            display: flex;
+            align-items: center;
+            color: hsla(103, 89%, 41%, 0.98);
+            font-family: sans-serif;
+        }
+
+        .sidebar_live > p{
+            flex: 1;
+          }
+
+        .sidebar_live > i{
+            margin: 0px 15px;
+        }
+        
+        .sidebar_container{
+            width: 95%;
+            height: 250px;
+            margin-left: 2.5%;
+            margin-top: 5px;
+        }
+
+        .container{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            background-color: #313137;
+            
+        }
+
+        .item{
+            width: 50%;
+            height: 125px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #C7C6CB;
+            background-color: #313137;
+        }
+
+        .item > i{
+            font-size: 40px;
+        }
+
+
+        .item > p{
+            margin-top: 5px;
+            font-family: sans-serif;
+        }
+
+        .item:hover{
+            background-color: #24232A;
+            color: purple;
+        }
+        .list {
+            width: 280px;
+            margin-left: 10px;
+            border-radius: 5px;
+            height: 40px;
+            background-color: #2a2a30;
+            border: none;
+            color: #98F1BB;
+            text-indent: 15px;
+
+        }
+
+        .list:hover {
+            background-color: #24232A;
+            color: rgb(189, 5, 196);
+
+        }
+ 
+        .list>option {
+            color: #98F1BB;
+            background-color: #24232A;
+            font-size: 15px;
+
+
+        }
+        .side{
+            display: flex;
+         width: 300px;
+         height: 60px;
+         background-color: #24232A;
+         margin-top: 85px;
+           
+        }
+
+        .sidebar_line {
+            width: 180px;
+            height: 40px;
+            color:#C7C6CB ;
+            font-family: sans-serif;
+            text-indent: 15px;
+
+        }
+        .sidebar_line>select{
+            width: 120px;
+            height: 25px;
+            font-weight: 500; 
+            background-color: transparent;
+            color: wheat;
+            border: none;
+
+        }
+        .sidebar_line>p{
+           color: rgba(124, 123, 123, 0.432);
+           font-size: 15px;
+           margin-top: 5px;
+           margin-left: 5px;
+           width: 130px;
+        }
+
+        .a{
+            width: 120px;
+            height: 40px;
+            color: #98F1BB;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            margin-left:120px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar_top">
+            <h1>Format</h1>
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="sidebar_live">
+            <i class="far fa-eye"></i>
+            <p>View Live Site</p>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="sidebar_container">
+            <div class="container">
+                <div class="item">
+                    <i class="fas fa-qrcode"></i>
+                    <p>Dashboard</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-list-ul"></i>
+                    <p>Site Menu</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <i class="fas fa-shapes"></i>
+                    <p>Disegn</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-file-alt"></i>
+                    <p>Pages</p>
+                </div>
+            </div>
+        </div>
+        <select class="list" name="" id="">
+            <option value="">MORE</option>
+            <option value=""> MIDDLE </option>
+            <option value=""> LESS</option>
+            <option value=""> A LOT </option>
+        </select>
+
+        <div class="side">
+            <div class="sidebar_line">
+             <select name="" id="">
+                 <option value="">
+                     Miguel Mendes
+                 </option>
+             </select>
+            <p> Pro  Yearly </p>
+            </div>
+            <div class="a">
+                <i class="fas fa-cog"></i>
+
+            </div>
+    </div>
+</body>
+</html>
